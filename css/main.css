@@ -6,28 +6,37 @@ a {
   text-decoration: none;
 }
 
-
 /*********************
 HEADER
 **********************/
 
 #logo {
-  max-width: 15%;
-  margin: auto;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 580px) {
+#logo {
+    padding-left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+header {
+    margin-bottom: -20px;
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  margin: 20px;
-  padding-bottom: 20px;
-  text-align: center
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center
 }
 
 /*********************
@@ -46,8 +55,8 @@ STEPS
 
 #steptitle {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    color: #2980b9;
+    font-weight: 400;
+    color: #272449;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.25em;
@@ -68,7 +77,7 @@ NAVIGATION
     padding-left: 20px;
     padding-right: 20px;
     margin-top: -10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center;
 }
   
@@ -86,21 +95,25 @@ FORM FRAME
 COLORS
 **********************/
 
-
 /* site body */
 body {
- background-color: #ffffff;
+    background-color: #ffffff;
 }
 
-/* blue header */
+/* logo header */
 header {
- background: #2980b9;  
+    background: #4C4E56;  
+}
+
+/* blue title background */
+.title {
+    background: #79B1BE;
 }
 
 /* logo text */
 h1, h2 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   color: white;
 }
 
@@ -108,7 +121,7 @@ h1, h2 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;    
+  font-weight: 400;    
   color: #2980b9;
   font-size: 0.75em;
   text-align: center;
@@ -117,11 +130,10 @@ p {
 nav a {
   color: #ccc;
   text-align: center;
-  padding-top: 50 px;
-
+  padding-top: 20 px;
 }
 
 /* selected anchor link */
 nav a.selected, nav a:hover {
- color: #2980b9; 
+ color: #272449; 
 }
